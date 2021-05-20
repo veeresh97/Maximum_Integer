@@ -44,4 +44,22 @@ public class FindMaximumTest {
         List<Double> arrayList = Arrays.asList(2.0, 4.0,10.0);
         Assertions.assertEquals(10.0,checkMax.findFloatMaximum(arrayList));
     }
+    @Test
+    public void givenStringMaximumAtFirstPosition(){
+        FindMaximum checkMax = new FindMaximum();
+        List<String> stringList = Arrays.asList("Peach","Apple","Banana");
+        Assertions.assertEquals("Peach",checkMax.findStringMaximum(stringList));
+    }
+    @Test
+    public void givenStringMaximumAtSecondPosition(){
+        FindMaximum checkMax = new FindMaximum();
+        List<String> stringList = Arrays.asList("Apple","Peach","Banana");
+        Assertions.assertEquals("Peach",checkMax.findStringMaximum(stringList));
+    }
+    @Test
+    public void givenStringMaximumAtThirdPosition(){
+        FindMaximum checkMax = new FindMaximum();
+        List<String> stringList = Arrays.asList("Apple","Banana","Peach");
+        Assertions.assertEquals("Peach",checkMax.findStringMaximum(stringList));
+    }
 }
