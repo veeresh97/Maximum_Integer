@@ -1,7 +1,10 @@
 package com.MaxInteger;
 
+import java.util.*;
+
 public class FindMaximum {
-    public static void main(String[] args) {
-        System.out.println("Welcome to Maximum Integer Program");
+    public  Comparable findMaximum(List myNumberList) {
+            Comparable max = Collections.max(myNumberList);
+            return max;
     }
 }
